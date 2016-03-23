@@ -4,7 +4,7 @@ const path = require('path');
 // const BowerWebpackPlugin = require('bower-webpack-plugin');
 
 module.exports = {
-  entry: ['./client/index.jsx'],
+  entry: ['./src/index.jsx'],
   output: {
     path: path.join(__dirname, 'dist/static'),
     filename: 'bundle.js',
@@ -18,7 +18,11 @@ module.exports = {
       {
         test: /\.jsx?/,
         loaders: ['babel'],
-        include: path.join(__dirname, 'client'),
+        include: [
+          path.join(__dirname, 'src'),
+          path.join(__dirname, 'config'),
+          path.join(__dirname, 'trivia-central-lib'),
+        ],
       },
       {
         test: /\.css$/,
