@@ -5,7 +5,7 @@ import { reduxForm } from 'redux-form';
 import { ButtonInput } from 'react-bootstrap';
 import FormInput from './FormInput';
 import ErrorMessage from './ErrorMessage';
-import { validateUsernameForm } from '../../trivia-central-lib/validations';
+import { validateUsernameForm } from '../../trivia-station-lib/validations';
 import { registerUsername } from '../actions';
 
 const fields = ['username'];

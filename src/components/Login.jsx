@@ -6,7 +6,7 @@ import { Link, browserHistory } from 'react-router';
 import { ButtonToolbar, Button } from 'react-bootstrap';
 import FormInput from './FormInput';
 import ErrorMessage from './ErrorMessage';
-import { validateSigninForm } from '../../trivia-central-lib/validations';
+import { validateSigninForm } from '../../trivia-station-lib/validations';
 import { loginUser, loginFacebook, loginGoogle } from '../actions';
 import FacebookLogin from './FacebookLogin';
 import GoogleLogin from './GoogleLogin';

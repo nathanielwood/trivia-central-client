@@ -4,7 +4,7 @@ import React, { Component, PropTypes } from 'react';
 import { reduxForm } from 'redux-form';
 import { Button, ButtonToolbar, Modal } from 'react-bootstrap';
 import { Link } from 'react-router';
-import { validateQuestionForm } from '../../trivia-central-lib/validations';
+import { validateQuestionForm } from '../../trivia-station-lib/validations';
 import FormInput from './FormInput';
 import { showModal, hideModal } from '../actions';
 

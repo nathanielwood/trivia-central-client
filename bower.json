@@ -1,12 +1,12 @@
 {
-  "name": "trivia",
+  "name": "Trivia Station",
   "description": "A trivia game",
   "main": "index.js",
   "authors": [
     "Nathaniel Wood"
   ],
   "license": "GPL-3.0",
-  "homepage": "https://github.com/nathanielwood/trivia",
+  "homepage": "https://github.com/nathanielwood/trivia-station-client",
   "moduleType": [],
   "ignore": [
     "**/.*",

@@ -1,2 +1,2 @@
 ## Synopsis
-Client app for Trivia Central
+Client app for Trivia Station

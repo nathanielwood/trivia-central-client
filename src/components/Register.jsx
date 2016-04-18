@@ -8,7 +8,7 @@ import FormInput from './FormInput';
 import ErrorMessage from './ErrorMessage';
 import FacebookLogin from './FacebookLogin';
 import GoogleLogin from './GoogleLogin';
-import { validateRegisterForm } from '../../trivia-central-lib/validations';
+import { validateRegisterForm } from '../../trivia-station-lib/validations';
 import { registerUser, loginFacebook, loginGoogle } from '../actions';
 
 const fields = ['username', 'email', 'password', 'confirm'];

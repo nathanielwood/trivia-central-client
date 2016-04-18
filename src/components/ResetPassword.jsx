@@ -7,7 +7,7 @@ import { reduxForm } from 'redux-form';
 import { validateForgotPasswordToken, resetPassword } from '../actions';
 import ErrorMessage from './ErrorMessage';
 import FormInput from './FormInput';
-import { validateChangePasswordForm } from '../../trivia-central-lib/validations';
+import { validateChangePasswordForm } from '../../trivia-station-lib/validations';
 
 const fields = ['password', 'confirm'];
 

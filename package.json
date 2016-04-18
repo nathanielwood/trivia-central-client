@@ -1,7 +1,7 @@
 {
-  "name": "trivia-client",
+  "name": "trivia-station-client",
   "version": "1.0.0",
-  "description": "Client side of Trivia Central",
+  "description": "Client side of Trivia Station",
   "main": "index.js",
   "scripts": {
     "check-config": "node ./config/check",
@@ -15,7 +15,7 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nathanielwood/trivia.git"
+    "url": "https://github.com/nathanielwood/trivia-station-client.git"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",

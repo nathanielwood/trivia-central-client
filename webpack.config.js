@@ -22,7 +22,7 @@ module.exports = {
         include: [
           path.join(__dirname, 'src'),
           path.join(__dirname, 'config'),
-          path.join(__dirname, 'trivia-central-lib'),
+          path.join(__dirname, 'trivia-station-lib'),
         ],
       },
       {
