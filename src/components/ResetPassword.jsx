@@ -48,9 +48,9 @@ class ResetPassword extends Component {
         <div>
           <Alert bsStyle="success">
             Your password has successfully changed.
-            You may now sign in to your account with your new password.
+            You may now login to your account with your new password.
           </Alert>
-          <Link to="/signin">Sign In</Link>
+          <Link to="/login">Login</Link>
         </div>
       );
     }

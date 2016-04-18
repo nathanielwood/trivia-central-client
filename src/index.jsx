@@ -1,4 +1,5 @@
 // client/index.jsx
+/* global __DEV__ */
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -23,10 +24,16 @@ import ForgotPassword from './components/ForgotPassword';
 import ResetPassword from './components/ResetPassword';
 import { logoutUser } from './actions';
 
-const loggerMiddleware = createLogger();
+const middlewares = [thunkMiddleware];
+
+if (process.env.NODE_ENV !== 'production') {
+  const loggerMiddleware = createLogger();
+  middlewares.push(loggerMiddleware);
+}
+
 const store = createStore(
   rootReducer,
-  applyMiddleware(thunkMiddleware, loggerMiddleware)
+  applyMiddleware(...middlewares)
 );
 const history = syncHistoryWithStore(browserHistory, store);
 const logout = (nextState, replace) => {

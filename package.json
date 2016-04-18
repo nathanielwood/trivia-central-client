@@ -6,9 +6,9 @@
   "scripts": {
     "check-config": "node ./config/check",
     "dev": "npm run check-config && npm run start-dev",
-    "start-dev": "node .",
+    "start-dev": "NODE_ENV=development node .",
     "build": "npm run check-config && npm run start-build",
-    "start-build": "webpack",
+    "start-build": "NODE_ENV=production webpack -p",
     "test": "echo todo"
   },
   "author": "Nathaniel Wood",

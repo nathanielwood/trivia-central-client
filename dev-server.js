@@ -12,10 +12,8 @@ const app = express();
 const webpackConfig = require('./webpack.config.js');
 webpackConfig.devtool = 'cheap-module-eval-source-map';
 webpackConfig.entry.unshift('webpack-hot-middleware/client');
-webpackConfig.plugins = [
-  new webpack.HotModuleReplacementPlugin(),
-  new webpack.NoErrorsPlugin(),
-];
+webpackConfig.plugins.push(new webpack.HotModuleReplacementPlugin());
+webpackConfig.plugins.push(new webpack.NoErrorsPlugin());
 const compiler = webpack(webpackConfig);
 
 app.use(require('webpack-dev-middleware')(compiler, {

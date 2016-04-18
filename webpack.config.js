@@ -1,5 +1,6 @@
 // webpack.config.js
 
+const webpack = require('webpack');
 const path = require('path');
 // const BowerWebpackPlugin = require('bower-webpack-plugin');
 
@@ -30,5 +31,10 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+    }),
+  ],
   // plugins: [new BowerWebpackPlugin()],
 };
