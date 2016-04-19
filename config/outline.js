@@ -3,7 +3,7 @@ export default {
     port: 3000, // port the dev server will listen to
   },
   api: {
-    url: 'http://localhost:8080/api', // url of the api server
+    url: 'http://localhost:8080', // url of the api server
   },
   facebook: {
     options: {
