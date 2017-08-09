@@ -346,7 +346,7 @@ export function fetchGame(id) {
       const question = json.questions[json.questionCursor];
       // if a question is already answered, need to get the correct answer
       if (question.answered) {
-        fetch(`http://localhost:8080/api/games/${id}/${question._id}`)
+        fetch(`${apiURL}/games/${id}/${question._id}`)
         .then(response => response.json())
         .then(json2 => {
           dispatch(receiveGame(json));
